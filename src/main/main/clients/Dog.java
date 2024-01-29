@@ -1,4 +1,4 @@
-package main;
+package main.clients;
 
 import java.time.LocalDate;
 
@@ -7,4 +7,12 @@ public class Dog extends Animal{
         super(nickname, owner, birthdate, illness);
     }
 
+    public Dog() {
+     super();
+    }
+
+    @Override
+    public void swim(int distance) {
+
+    }
 }

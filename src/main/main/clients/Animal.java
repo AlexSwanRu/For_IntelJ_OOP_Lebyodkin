@@ -1,8 +1,8 @@
-package main;
+package main.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
     protected final String nickname;
     protected Owner owner;
     protected LocalDate birthdate;
@@ -29,31 +29,46 @@ public class Animal {
     }
 
     public void lifeCircle (){
-        wakeup("12:00");
+        wakeup("4:00");
         eat();
         hunt();
         sleep();
-    }
+        toGo();
+        fly();
+        swim();
+           }
 
     private void wakeup () {
-        System.out.println("Животное проснулось");
+        System.out.println("Животное проснулось! Атас!");
     }
     private void wakeup (String time) {
-        System.out.println("Животное " +nickname+ " проснулось в " +time);
+        System.out.println("Чудовище " +nickname+ " проснулось в " +time);
     }
 
     private void hunt () {
-        System.out.println("Животное охотится");
+        System.out.println("Животное решило поохотится");
     }
     private void eat () {
-        System.out.println("Животное ест");
+        System.out.println("Животное умиротворённо ест");
             }
 
     private void sleep () {
-        System.out.println("Животное спит...");
+        System.out.println("Наконец-то,это чудовище уснуло!");
             }
     public String getType(){
         return getClass().getSimpleName();
+    }
+
+    private void toGo () {
+        System.out.println("Осторожно, животное активно передвигается!");
+    }
+
+    private void fly () {
+        System.out.println("Осторожно, животное решило полетать!");
+    }
+
+    private void swim() {
+        System.out.println(":Животное, удивительнщо, но плавает!");
     }
 
     public Animal(String nickname, Owner owner, LocalDate birthdate, Illness illness) {
@@ -71,4 +86,6 @@ public class Animal {
     public String toString() {
         return String.format("nickname=%s, bd=%s, owner=%s, illness=%s", nickname,birthdate,owner,illness);
     }
+
+    public abstract void swim(int distance);
 }
