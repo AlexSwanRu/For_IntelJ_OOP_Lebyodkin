@@ -1,4 +1,10 @@
 package main.personal;
 
-public class Nurse {
+public class Nurse extends Staff{
+    @Override
+
+
+    public void working() {
+        System.out.println("Медсестра делает укол");
+    }
 }

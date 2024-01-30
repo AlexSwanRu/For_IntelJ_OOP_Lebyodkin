@@ -1,4 +1,11 @@
 package main.personal;
 
-public class Doctor {
+import java.util.List;
+
+public class Doctor extends Staff{
+
+
+    public Doctor() {
+        super();
+    }
 }
