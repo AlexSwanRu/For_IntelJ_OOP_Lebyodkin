@@ -5,6 +5,6 @@ public class Nurse extends Staff{
 
 
     public void working() {
-        System.out.println("Медсестра делает укол");
+        System.out.println("Медсестра делает укол, не стоять под иглой!");
     }
 }

@@ -11,6 +11,9 @@ public class Frog extends Animal{
     }
 
     @Override
+    public void eat() {
+        System.out.println("Лягушка наелась комаров и довольно квакает!");
+    }
     public void swim(int distance) {
 
     }

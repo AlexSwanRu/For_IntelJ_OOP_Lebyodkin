@@ -11,7 +11,9 @@ public class BirdFrigate extends Animal{
     }
 
     @Override
-
+    public void eat() {
+        System.out.println("Птица фрегат поймала рыбу и наслаждается!");
+    }
     public void swim(int distance) {
           System.out.println("Птицы Фрегаты не плавают, для них это смертельно!!!");;
     }

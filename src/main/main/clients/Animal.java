@@ -48,9 +48,7 @@ public abstract class Animal {
     private void hunt () {
         System.out.println("Животное решило поохотится");
     }
-    private void eat () {
-        System.out.println("Животное умиротворённо ест");
-            }
+    public abstract void eat ();
 
     private void sleep () {
         System.out.println("Наконец-то,это чудовище уснуло!");
