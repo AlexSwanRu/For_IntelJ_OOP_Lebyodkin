@@ -19,7 +19,7 @@ Animal fish=new Animal() {
 
     }
 
-    public void swim(){
+    public void floa(){
         System.out.println("Рыбы отлично плавают");
     }
 
@@ -27,4 +27,10 @@ Animal fish=new Animal() {
     public void swim(int distance) {
 
     }
+
+//    @Override
+//    public int swim() {
+//
+//        return 0;
+//    }
 }

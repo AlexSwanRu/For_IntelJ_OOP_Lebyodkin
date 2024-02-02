@@ -15,19 +15,30 @@ public class Frog extends Animal implements Swimable {
     }
 
     @Override
-    public void eat() {
-        System.out.println("Лягушка наелась комаров и довольно квакает!");
-    }
     public void swim(int distance) {
 
     }
+
+    @Override
+    public void eat() {
+        System.out.println("Лягушка наелась комаров и довольно квакает!");
+    }
+//    public void swim(int distance) {
+//
+//    }
 
     public void jumping() {
          System.out.println("Разбегайся, лягушка прыгает...");
            }
 
     @Override
-    public void swim() {
-        
+    public double swim() {
+        return Swimable.super.swim();
     }
+
+//    @Override
+//    public int swim() {
+//
+//        return 0;
+//    }
 }

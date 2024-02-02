@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 public class Cat extends Animal implements Goable, Huntable {
     Double discount;
-    public Cat() {
+       public Cat() {
         super();
         this.discount=10D;
     }
@@ -17,9 +17,8 @@ public class Cat extends Animal implements Goable, Huntable {
         super(nickname, owner, birthdate, illness);
         this.discount=discount;
     }
-    public void go(){
-        System.out.println("Умею ходить");
-    }
+
+//    }
     public void hunt(){
         System.out.println("Не отвлекать! Сейчас кошка охотится..");
     }
@@ -45,5 +44,15 @@ public class Cat extends Animal implements Goable, Huntable {
     }
     public void swim(int distance) {
 
+    }
+
+    @Override
+    public void go() {
+
+    }
+
+    @Override
+    public double run() {
+        return Goable.super.run();
     }
 }
