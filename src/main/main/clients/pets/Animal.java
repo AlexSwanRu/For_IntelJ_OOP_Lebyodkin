@@ -6,6 +6,7 @@ import main.clients.Owner;
 import java.time.LocalDate;
 
 public abstract class Animal {
+    public static Animal patient;
     protected final String nickname;
     protected Owner owner;
     protected LocalDate birthdate;
