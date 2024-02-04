@@ -1,28 +1,31 @@
 package main.veterinaryClinic.clinic;
 
 import main.clients.pets.Animal;
-import main.veterinaryClinic.colleague.Workerl;
+import main.veterinaryClinic.colleague.Worker;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static main.clients.pets.Animal.*;
+
 public class VeterinaryClinic {
-   protected List<Workerl> worker;
+   protected List<Worker> worker;
    protected List<Animal>patiens;
 
-   public void addEmployee(Workerl.employee) {
-      worker.add(employee);
-   }
-   public void addPatient(Animal.patient) {
-      patiens.add((Animal.patient);
-   }
-      worker.add(w);
+//   public void addEmployee(Worker.employee) {
+//      worker.add(employee);
+//   }
+//   public void addPatient(Animal.patient) {
+//      patiens.add(patient);
+//   }
+
 
 
    public List<Animal> getPatiens() {
       return patiens;
          }
 
-   public List<Workerl> getWorker() {
+   public List<Worker> getWorker() {
       return worker;
    }
 
@@ -31,6 +34,10 @@ public class VeterinaryClinic {
       this.patiens=new ArrayList<>();
 
       }
+
+   public void addEmployee(Worker w) {
+
+   }
 }
 
 

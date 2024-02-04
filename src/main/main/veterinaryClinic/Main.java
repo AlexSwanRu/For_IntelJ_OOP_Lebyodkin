@@ -1,4 +1,4 @@
-//Урок 2. Принципы ООП Абстракция и интерфейсы. Пример проектирования
+package main.veterinaryClinic;//Урок 2. Принципы ООП Абстракция и интерфейсы. Пример проектирования
 //        Создать класс Doctor и подумать над его состоянием и поведением. Создать класс Nurse(медсестра) и подумать над его
 //        состоянием и поведением.
 //        Создайте интерфейсы Goable, Flyable, Swimable. У интерфейсов должны быть
@@ -23,13 +23,12 @@
 //        package main.veterinaryClinic;
 
 import main.veterinaryClinic.clinic.VeterinaryClinic;
-import main.veterinaryClinic.colleague.Workerl;
-import sun.tools.jconsole.Worker;
+import main.veterinaryClinic.colleague.Worker;
 
 public class Main {
     public static void main(String[] args) {
         VeterinaryClinic veterinaryClinic=new VeterinaryClinic();
-        Workerl w=new Workerl();
+        Worker w=new Worker();
         System.out.println(veterinaryClinic.getPatiens());
         System.out.println(veterinaryClinic.getWorker());
         veterinaryClinic.addEmployee(w);
